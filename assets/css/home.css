@@ -1,0 +1,347 @@
+body {
+  background-color: #1a1a1a !important;
+  color: #f5f5f7 !important;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.section-top {
+  margin-top: 200px;
+}
+
+.section-buttom {
+  margin-bottom: 200px;
+}
+
+/*-------------------sroll animations start ---------------------*/
+/* animation 1*/
+.scroll-animation-1 {
+  opacity: 0;
+}
+
+@keyframes scroll-1 {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.scroll-1 {
+  animation: scroll-1 1s ease-out forwards;
+}
+
+/* animation 2*/
+.scroll-animation-2 {
+  opacity: 0;
+}
+
+@keyframes scroll-2 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.scroll-2 {
+  animation: scroll-2 1s ease-out forwards;
+}
+
+/*-------------------sroll animations end ---------------------*/
+/*----------------------navigation bar---------------------------*/
+#navbar {
+  background-color: rgba(0, 0, 0, 0.668);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+}
+
+.nav-item {
+  font-size: 13px;
+
+}
+
+/*----------------------hero section---------------------------*/
+#hero-section {
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-top: -56px;
+}
+
+@media (max-width: 768px) {
+  #hero-section {
+    background-image: url(../images/hero__moblie.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 0;
+  }
+}
+
+#hero-section-content {
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  #hero-section-content {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.545);
+    width: 100%;
+  }
+}
+
+#hero-button {
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  padding-top: 2px;
+}
+
+#hero-parapraph {
+  background-color: black;
+  border-radius: 20px;
+}
+
+/*----------------------design section---------------------------*/
+#design {
+  background-color: black;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+}
+
+#design-title1 {
+  font-size: calc(1.5rem + 3vw);
+  max-width: 600px;
+}
+
+#design-image {
+  width: 1000px;
+
+}
+
+@media (max-width: 768px) {
+  #design-image {
+    /*transform: rotate(-90deg);*/
+    max-width: 100%;
+    margin-top: 100px;
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+}
+
+/*----------------------Take a closer look---------------------------*/
+#closer_look_title {
+  background-color: black;
+  border-radius: 20px;
+}
+
+#closer_look_img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:758px) {
+  #closer_look_img {
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+#closer_look_section {
+  position: absolute;
+  top: 20%;
+  left: 50px;
+}
+
+@media (max-width:758px) {
+  #closer_look_section {
+    top: 10%;
+    left: 2px;
+  }
+}
+
+.closer_look_box {
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  height: 45px;
+  cursor: pointer;
+}
+
+.closer_look_box:hover {
+  border-color: #ff7a21;
+}
+
+#color {
+  width: 75px;
+}
+
+#aluminum_unibody {
+  width: 184px;
+}
+
+#vapor_chamber {
+  width: 155px;
+}
+
+#ceramic_shield {
+  width: 154px;
+}
+
+#immersive_pro_display {
+  width: 204px;
+}
+
+#camera_control {
+  width: 158px;
+}
+
+#action_button {
+  width: 148px;
+}
+
+.closer_after {
+  width: 250px !important;
+  height: 50px !important;
+  border-radius: 20px !important;
+  background-color: #ff7a21;
+  color: black;
+  font-weight: 700;
+}
+
+@media (max-width:758px) {
+  .closer_after{
+    width: 225px !important;
+  }
+}
+
+/* closer look image Animation eka*/
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* animation class*/
+.fade-animation {
+  animation: fadeInEffect 0.6s ease-out;
+}
+
+/*feature section*/
+#feature_description {
+  background-color: #1a1a1a;
+  position: absolute;
+  height: 190px;
+  width: 350px;
+  border-radius: 20px;
+  bottom: 40px;
+  right: 65px;
+  padding: 33px;
+  display: none;
+}
+
+@media (max-width:758px) {
+  #feature_description {
+    bottom: 10px;
+    padding: 25px;
+    height: 170px;
+    right: auto;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+  }
+}
+
+#featutre_title {
+  color: #ff7a21;
+  font-weight: 700;
+}
+
+#featutre_p {
+  text-align: justify;
+  font-size: 13px;
+}
+
+.P-circle {
+  background-color: #f5f5f7;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+#cancle_icon {
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/*----------------------cameras---------------------------*/
+#cameras {
+  background-color: black;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#camera_img_col{
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+}
+
+#camera_img{
+  width: 150%;
+  background-size: cover;
+  background-position: right;
+}
+
+#camera_title1 {
+  font-size: calc(1.5rem + 3vw);
+  margin-bottom: 70px;
+}
+
+#camera_p_text{
+  font-size: calc(1rem + 0.3vw);
+  margin-bottom: -10px;
+}
+
+#camera_title2{
+  font-size: calc(1.5rem + 3vw);
+  margin-bottom: -10px;
+  font-weight: 700;
+  color: #ff7a21;
+}
+
+#camera_paragraph{
+  margin-top: 100px;
+  width: 750px;
+  font-size: 1.2rem;
+  text-align: center;
+}
